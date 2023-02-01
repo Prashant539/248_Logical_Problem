@@ -7,7 +7,7 @@ namespace LogicalProgram
         {
             Console.WriteLine("Welcome to Logical Program");
             Console.WriteLine("Please Choose any Option to execute Program");
-            Console.WriteLine("1:FibonacciSeries\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber");
+            Console.WriteLine("1:FibonacciSeries\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:TempConversion\n6:WeekDay");
             int Options = Convert.ToInt32(Console.ReadLine());
             switch(Options)
             {
@@ -22,6 +22,12 @@ namespace LogicalProgram
                     break;
                 case 4:
                     ReverseNumber.ReverseNumberPrint();
+                    break;
+                case 5:
+                    TempConversion.Temp();
+                    break;
+                case 6:
+                    WeekDay.DayOfWeek();
                     break;
             }
             
