@@ -7,7 +7,7 @@ namespace LogicalProgram
         {
             Console.WriteLine("Welcome to Logical Program");
             Console.WriteLine("Please Choose any Option to execute Program");
-            Console.WriteLine("1:FibonacciSeries\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:TempConversion\n6:WeekDay\n7:MonthlyPayment\n8:Binary\n9:CuponNumber");
+            Console.WriteLine("1:FibonacciSeries\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:TempConversion\n6:WeekDay\n7:MonthlyPayment\n8:Binary\n9:CuponNumber\n10:StopWatch");
             int Options = Convert.ToInt32(Console.ReadLine());
             switch(Options)
             {
@@ -38,6 +38,11 @@ namespace LogicalProgram
                 case 9:
                     CuponNumber.CuponNumberPrint();
                     break;
+                case 10:
+                    StopWatch stopWatch = new StopWatch();
+                    stopWatch.Start();
+                    break;
+                    
             }
             
 
