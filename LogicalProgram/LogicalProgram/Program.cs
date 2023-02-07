@@ -7,7 +7,7 @@ namespace LogicalProgram
         {
             Console.WriteLine("Welcome to Logical Program");
             Console.WriteLine("Please Choose any Option to execute Program");
-            Console.WriteLine("1:FibonacciSeries\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:TempConversion\n6:WeekDay\n7:MonthlyPayment");
+            Console.WriteLine("1:FibonacciSeries\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:TempConversion\n6:WeekDay\n7:MonthlyPayment\n8:Binary");
             int Options = Convert.ToInt32(Console.ReadLine());
             switch(Options)
             {
@@ -32,6 +32,9 @@ namespace LogicalProgram
                 case 7:
                     MonthlyPayment.Payment();
                     break;  
+                case 8:
+                    ToBinary.DecimalToBinary();
+                    break;
             }
             
 
